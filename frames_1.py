@@ -18,6 +18,7 @@ value=driver.find_element(By.XPATH,"//table[@class='overviewSummary']/tbody/tr[1
 print(value)
 #############################  #to comeout from frame
 driver.switch_to.default_content()
-#############################
+
+############################ # clicking on link in another frame
 driver.switch_to.frame("packageFrame")
 driver.find_element(By.PARTIAL_LINK_TEXT,"Actions").click()
